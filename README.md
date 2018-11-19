@@ -1,8 +1,8 @@
 # Installation of songbird
 
 ```
-conda create -n regression tensorflow tqdm pip jupyter notebook
-conda install -n regression biom-format scikit-bio -c conda-forge
+conda create -n regression tensorflow tqdm pip jupyter notebook scikit-bio
+conda install -n regression biom-format -c conda-forge
 source activate regression
 ```
 
