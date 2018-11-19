@@ -4,6 +4,7 @@
 conda create -n regression tensorflow tqdm pip jupyter notebook scikit-bio
 conda install -n regression biom-format -c conda-forge
 source activate regression
+pip install git+https://github.com/mortonjt/songbird.git
 ```
 
 The scripts used to run songbird can be found in the scripts directory
