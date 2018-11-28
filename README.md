@@ -22,6 +22,8 @@ All data files are stored under the data directory.
 - byrd_metadata.txt : Sample metadata in Byrd et al
 - read_counts_BacteriaMalassezia_62subjectsUPto3mismatchs_ADonly.txt : M. globosa and P. acnes counts in Leung et al
 
+Note that the qiime2 artifacts contain all of the processing information in the providence, so it is possible to retrace all of the qiime2 commands that were performed in order to reproduce those artifacts.
+
 # Analysis notebooks
 
 The analysis notebooks can be found under the ipynb folder
