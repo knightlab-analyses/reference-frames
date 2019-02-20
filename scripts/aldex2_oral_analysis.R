@@ -7,7 +7,8 @@ setwd("/Users/jmorton/Documents/dev/reference-frames/scripts/benchmark_scripts")
 # load data ---------------------------------------------------------------
 
 map <- read.delim("../../data/oral_trimmed_metadata.txt", row.names=1)
-otu <- read.delim("../../data/oral_trimmed_deblur.txt", row.names=1)
+otu <- t(read_delim("../../data/oral_trimmed_deblur.txt", delim = "\t", skip=1, row.name=1))
+#otu <- read.delim("../../data/oral_trimmed_deblur.txt", row.names=1)
 
 # helper functions --------------------------------------------------------
 
@@ -56,6 +57,6 @@ sig_aldex2(sfit)
 
 # now just list differential abundance
 data.frame(sfit$category, sfit$effect, sfit$padj) %>% 
-  write.table(file="../../results/oral_results/aldex2_results.txt")
+  write.table(file="../../results/oral-results/aldex2_results.txt")
 
 
