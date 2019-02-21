@@ -8,15 +8,15 @@ setwd("/Users/jmorton/Documents/dev/reference-frames/scripts/benchmark_scripts")
 # Meta data
 meta.dat=read.delim("../../data/oral_trimmed_metadata.txt")
 meta.dat=as.data.frame(meta.dat)
-meta.dat$Sample.ID=meta.dat$`#SampleID`
+meta.dat$Sample.ID=meta.dat$`X.SampleID`
 meta.dat=meta.dat%>%select(Sample.ID,  brushing_event)%>%
   mutate(subject=rep(paste0("subject", seq(nrow(meta.dat)/2)), each=2))
 
 # Feature table
-feature.table.origin=read.delim("../../data/oral_trimmed_deblur.txt", skip=1)
-OTU.name=feature.table.origin$`#OTU ID`
-feature.table=data.frame(Sample.ID=colnames(feature.table.origin)[-1], 
-                         t(as.matrix(feature.table.origin[, -1])), row.names = NULL)
+feature.table = read.delim("../../data/oral_trimmed_deblur.txt", row.names=1)
+OTU.name=colnames(feature.table)
+feature.table=data.frame(Sample.ID=rownames(feature.table), 
+                         as.matrix(feature.table), row.names = NULL)
 colnames(feature.table)=c("Sample.ID", OTU.name)
 feature.table=as.data.frame(feature.table)
 

@@ -7,7 +7,7 @@ setwd("/Users/jmorton/Documents/dev/reference-frames/scripts/benchmark_scripts")
 # load data ---------------------------------------------------------------
 
 map <- read.delim("../../data/oral_trimmed_metadata.txt", row.names=1)
-otu <- t(read_delim("../../data/oral_trimmed_deblur.txt", delim = "\t", skip=1, row.name=1))
+otu <- read.delim("../../data/oral_trimmed_deblur.txt", row.names=1)
 #otu <- read.delim("../../data/oral_trimmed_deblur.txt", row.names=1)
 
 # helper functions --------------------------------------------------------
