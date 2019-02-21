@@ -45,7 +45,7 @@ summary_aldex2 <- function(fit){
     mutate(low=NA, high=NA)
 }
 
-
+  
 # analysis ----------------------------------------------------------------
 d <- data.frame(Condition = map$brushing_event, otu)
 
