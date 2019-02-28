@@ -4,7 +4,7 @@ songbird multinomial \
 	--formula 'microbial_biomass+ph+tot_nitro+tot_org_carb+water_content_soil' \
 	--input-biom ../data/soils/ref_table.biom \
 	--metadata-file ../data/soils/metadata.txt \
-	--batch-size 3 \
+	--batch-size 20 \
 	--epoch 10000 \
     	--learning-rate 1e-3 \
     	--min-feature-count 24 \
