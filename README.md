@@ -4,7 +4,7 @@
 conda create -n regression tensorflow tqdm pip jupyter notebook scikit-bio
 conda install -n regression biom-format -c conda-forge
 source activate regression
-pip install git+https://github.com/mortonjt/songbird.git
+pip install songbird
 ```
 
 The scripts used to run songbird can be found in the scripts directory
@@ -28,5 +28,3 @@ Note that the qiime2 artifacts contain all of the processing information in the 
 # Analysis notebooks
 
 The analysis notebooks can be found under the ipynb folder
-
-
