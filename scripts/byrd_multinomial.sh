@@ -3,8 +3,8 @@ songbird multinomial \
   --metadata-file ../data/byrd_metadata.txt \
   --formula "C(Timepoint, Treatment('F'))" \
   --training-column Test \
-  --epoch 5000 \
+  --epochs 5000 \
   --learning-rate 1e-3 \
   --batch-size 5 \
-  --beta-prior 10 \
+  --differential-prior 10 \
   --summary-dir ../results/byrd-results
