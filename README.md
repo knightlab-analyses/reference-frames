@@ -1,10 +1,12 @@
 # Installation recommendations
 
-At the time of submission, it is recommended to install songbird within a [qiime2-2019.1 environment](https://docs.qiime2.org/2019.1/install/native/#install-qiime-2-within-a-conda-environment).
-The installation of songbird would look like
+It is recommended to install songbird as follows
+
 ```
-source activate qiime2-2019.1
-conda install tensorflow>1.5 tqdm
+conda create -n songbird_env numpy=1.15 scikit-bio>0.5.1
+source activate songbird_env
+conda install tensorflow=1.10 tqdm nomkl
+conda install biom-format h5py -c conda-forge
 pip install songbird
 ```
 
