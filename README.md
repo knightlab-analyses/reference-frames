@@ -1,9 +1,9 @@
-# Installation of songbird
+# Installation recommendations
 
+At the time of submission, it is recommended to install songbird within a [qiime2-2019.1 environment](https://docs.qiime2.org/2019.1/install/native/#install-qiime-2-within-a-conda-environment).
+The installation of songbird would look like
 ```
-conda create -n regression tensorflow tqdm pip jupyter notebook scikit-bio
-conda install -n regression biom-format -c conda-forge
-source activate regression
+source activate qiime2-2019.1
 pip install songbird
 ```
 
