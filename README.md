@@ -3,7 +3,7 @@
 It is recommended to install songbird as follows
 
 ```
-conda create -n songbird_env numpy=1.15 scikit-bio>0.5.1
+conda create -n songbird_env numpy=1.15 scikit-bio>0.5.1 seaborn pandas=0.23
 source activate songbird_env
 conda install tensorflow=1.10 tqdm nomkl
 conda install biom-format h5py -c conda-forge
