@@ -4,6 +4,7 @@ At the time of submission, it is recommended to install songbird within a [qiime
 The installation of songbird would look like
 ```
 source activate qiime2-2019.1
+conda install tensorflow>1.5 tqdm
 pip install songbird
 ```
 
