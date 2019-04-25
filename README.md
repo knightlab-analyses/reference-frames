@@ -1,10 +1,13 @@
-# Installation of songbird
+# Installation recommendations
+
+It is recommended to install songbird as follows
 
 ```
-conda create -n regression tensorflow tqdm pip jupyter notebook scikit-bio
-conda install -n regression biom-format -c conda-forge
-source activate regression
-pip install git+https://github.com/mortonjt/songbird.git
+conda create -n songbird_env numpy=1.15 scikit-bio>0.5.1 seaborn pandas=0.23
+source activate songbird_env
+conda install tensorflow=1.10 tqdm nomkl
+conda install biom-format h5py -c conda-forge
+pip install songbird
 ```
 
 The scripts used to run songbird can be found in the scripts directory
@@ -28,5 +31,3 @@ Note that the qiime2 artifacts contain all of the processing information in the 
 # Analysis notebooks
 
 The analysis notebooks can be found under the ipynb folder
-
-
