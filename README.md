@@ -3,11 +3,12 @@
 It is recommended to install songbird as follows
 
 ```
-conda create -n songbird_env numpy=1.15 scikit-bio>0.5.1 seaborn pandas=0.23
+conda create -n songbird_env numpy=1.15.4 scikit-bio>0.5.1 seaborn pandas=0.23.4
 source activate songbird_env
 conda install tensorflow=1.10 tqdm nomkl
 conda install biom-format h5py -c conda-forge
-pip install songbird
+conda install jupyter notebook
+conda install songbird -c conda-forge
 ```
 
 The scripts used to run songbird can be found in the scripts directory
