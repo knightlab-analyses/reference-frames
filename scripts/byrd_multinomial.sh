@@ -7,4 +7,5 @@ songbird multinomial \
   --learning-rate 1e-3 \
   --batch-size 5 \
   --differential-prior 10 \
+  --min-feature-count 0 \
   --summary-dir ../results/byrd-results
